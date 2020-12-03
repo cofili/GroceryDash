@@ -1,0 +1,119 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/light_blue"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/light_blue">
+
+        <ImageView
+            android:id="@+id/image_view_cart"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/text_view_item"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="serif"
+            android:gravity="end"
+            android:padding="8dp"
+            android:text="name"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_item"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="serif"
+            android:padding="10dp"
+            android:text="Price"
+            android:textColor="@color/red"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@id/text_view_msrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_item"
+            android:layout_toLeftOf="@id/text_view_price"
+            android:fontFamily="serif"
+            android:padding="10dp"
+            android:text="MSRP"
+            android:textSize="15dp" />
+
+        <ImageButton
+            android:id="@+id/button_remove"
+            android:layout_width="37dp"
+            android:layout_height="26dp"
+            android:layout_below="@id/text_view_price"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/light_blue"
+            android:src="@drawable/ic_baseline_remove_circle_outline_24"
+            android:textSize="5dp" />
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_msrp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toLeftOf="@id/button_remove"
+            android:background="@color/light_blue"
+            android:padding="15dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <ImageButton
+            android:id="@+id/button_delete_item"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/text_view_msrp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="169dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/button_add"
+            android:backgroundTint="@color/light_blue"
+            android:src="@drawable/ic_baseline_delete_24" />
+
+        <ImageButton
+            android:id="@+id/button_add"
+            android:layout_width="37dp"
+            android:layout_height="26dp"
+            android:layout_below="@id/text_view_msrp"
+            android:layout_marginTop="19dp"
+            android:layout_toLeftOf="@id/counter"
+            android:backgroundTint="@color/light_blue"
+            android:src="@drawable/ic_baseline_add_circle_outline_24" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

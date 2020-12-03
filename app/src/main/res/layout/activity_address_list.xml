@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="choose shipping address"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:padding="15dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:id="@+id/button_addaddress"
+        android:text="add address"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>
